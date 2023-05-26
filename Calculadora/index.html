@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="card">   
+        <!-- <div class="display"> </div> -->
+        
+        <input type="text" id="valor1" class="display" placeholder="1° Valor">
+
+        <input type="text" id="valor2" class="display" placeholder="2° Valor">
+
+        <select id="operacao" class="display">
+            <option value="0"> Escolha a Operação</option>
+            <option value="1"> Adição</option>
+            <option value="2"> Subtração</option>
+            <option value="3"> Multiplicação</option>
+            <option value="4"> Divisão</option>
+        </select>
+
+    </br>
+        <button onclick="calcularOperação()" class="display">Calcular </button>
+        <input type="text" id="resultado" class="display" placeholder="Resultado" readonly>
+    </div>
+
+    <div class="card2">   
+        <!-- <div class="display"> </div> -->
+        
+        <input type="text" id="valor3" class="display" placeholder="Tabuada Requirida">
+        <button onclick="calcularTabuada()" class="display">Calcular </button>
+        <textarea id="resultText" class="display" placeholder="Resultado" readonly></textarea>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
